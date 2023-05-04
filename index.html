@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-brasil">
+	<script language="JavaScript">
+        function protegercodigo() {
+        if (event.button==2||event.button==3){
+            alert('Código protegido por: Marcos Santos 🔐');}
+        }
+        document.onmousedown=protegercodigo
+    </script>
+    <script>
+    if (document.addEventListener) {
+        document.addEventListener("keydown", bloquearSource);
+    } else { //Versões antigas do IE
+        document.attachEvent("onkeydown", bloquearSource);
+    }
+    
+    function bloquearSource(e) {
+        e = e || window.event;
+    
+        var code = e.which || e.keyCode;
+    
+        if (
+            e.ctrlKey &&
+            (code == 83 || code == 85) //83 = S, 85 = U
+        ) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            } else {
+                e.returnValue = false;
+            }
+    
+            return false;
+        }
+    }
+    </script>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<title>Submit Telecom - Internet com muito mais qualidade e segurança!</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fakeLoader.css">
+		<link rel="stylesheet" href="css/line-awesome.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<!-- preloader -->
+		<div class="fakeLoader"></div>
+		<!-- end preloader -->
+
+
+		<!-- navbar -->
+		<div id="navbar" class="navbar navbar-expand-lg justify-content-center align-items-center">
+			<div class="container">
+				 <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			        <i class="la la-bars"></i>
+			    </button>
+
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav nav">
+						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">Sobre nós</a></li>
+						<li class="nav-item"><a class="nav-link" href="#promo">Desconto</a></li>
+						<li class="nav-item"><a class="nav-link" href="#pricing">Planos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+					</ul>
+			    </div>
+			   
+			    <ul class="button-navbar">
+			    	<li><a href="http://18463.webmikrotik.com/central-new/login.php"><button class= "button button2">CENTRAL DO CLIENTE</button></li>
+			    </ul>
+			</div>
+		</div>
+		<!-- end navbar -->
+
+
+		<!-- intro -->
+		<div id="home" class="intro">
+			<div class="container">
+				<div class="content-box">
+					<div class="row gx-5 align-items-center">
+						<div class="col-md">
+							<div class="content-left">
+								<h1>POR QUE A SUBMIT É IDEAL PARA VOCÊ?</h1>
+							<p>Muito mais velocidade pra você navegar numa boa.</p>
+							<ul>
+								<li><a href="https://appfortrade.speedtestcustom.com/"></a><button class="button button3">TESTE SUA VELOCIDADE</button></li>
+								<li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527997121517"></a><button class="button button2">ASSINE AGORA</button></li>
+							</ul>
+							<p class="bold"><span>700</span>Mbps velocidade</p>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="content-image">
+								<img src="img/intro.png" alt="">
+							</div>
+							<div class="content-entry">
+								<div class="content">
+									<div class="icon">
+										<i class="la la-wifi"></i>
+									</div>
+									<div class="text">
+										<h6>Stable</h6>
+										<span>Minim Problem</span>
+									</div>
+								</div>
+								<div class="content">
+									<div class="icon">
+										<i class="la la-rocket"></i>
+									</div>
+									<div class="text">
+										<h6>Faster</h6>
+										<span>50Mbps Speed</span>
+									</div>
+								</div>
+								<div class="content">
+									<div class="icon">
+										<i class="la la-signal"></i>
+									</div>
+									<div class="text">
+										<h6>Unlimted</h6>
+										<span>Without Limit</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end intro -->
+
+		<!-- about -->
+		<div id="about" class="about">
+			<div class="container">
+				<div class="row gx-5 align-items-center">
+					<div class="col-md">
+						<img src="img/about.png" alt="">
+					</div>
+					<div class="col-md">
+						<div class="content">
+							<h2>Roteador Wi-Fi grátis!</h2>
+							<p>Ao escolher um plano com velocidade igual ou superior a 50mbps, você leva de brinde o roteador Wi-Fi, para navegar a vontade, seja na sua TV, notebook ou smartphone!</p>
+							<div class="row">
+								<div class="col">
+									<ul>
+										<li><i class="la la-check-circle"></i> Unlimited</li>
+										<li><i class="la la-check-circle"></i> Faster Connect</li>
+										<li><i class="la la-check-circle"></i> Phone Call</li>
+										<li><i class="la la-check-circle"></i> 10Mbps Speed Donwload</li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul>
+										<li><i class="la la-check-circle"></i> 8Mbps Speed Upload</li>
+										<li><i class="la la-check-circle"></i> Minim Problem</li>
+										<li><i class="la la-check-circle"></i> Connection Stable</li>
+										<li><i class="la la-check-circle"></i> 24/7 Support</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end about -->
+
+		<!-- achievement -->
+		<div class="achievement">
+			<div class="container">
+				<div class="content">
+					<div class="row">
+						<div class="col-md col-sm-6">
+							
+							<a href="#" class="navbar-brand"><img src="img/1.png" alt=""></a>
+							 <p>Wi-Fi Grátis</p>
+						</div>
+						<div class="col-md col-sm-6">
+							 
+							<a href="#" class="navbar-brand"><img src="img/3.png" alt=""></a>
+							 <p>Estabilidade de Conexão</p>
+						</div>
+						<div class="col-md col-sm-6">
+							 
+							<a href="#" class="navbar-brand"><img src="img/2.png" alt=""></a>
+							 <p>infraestrutura Robusta</p>
+						</div>
+						<div class="col-md col-sm-6">
+							
+							<a href="#" class="navbar-brand"><img src="img/4.png" alt=""></a>
+							 <p>Internet 100% Fibra</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- end achievement -->
+
+		<!-- promo -->
+		<div id="promo" class="promo">
+			<div class="container">
+				<div class="content">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<div class="entry">
+								<h2>Os melhores planos <span>de internet</span> para sua família </h2>
+							<button class="button">Contratar</button>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<img src="img/promo.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end promo -->
+
+		<!-- pricing -->
+		<div id="pricing" class="pricing">
+			<div class="container">
+				<h2>Conheça os melhores planos <br> da região!</h2>
+				<div class="row gx-5">
+					<div class="col-md">
+						<div class="content">
+							<h4>Pessoal</h4>
+							<a href="." class="navbar-brand"><img src="img/velocidade2.png" alt=""></a>
+							<p class="bold"><span>80</span>Mbps</p>
+							<ul>
+								<li><i class="la la-check-circle"></i> Wi-fi Grátis</li>
+								<li><i class="la la-check-circle"></i> Instalação Grátis</li>
+								<li><i class="la la-check-circle"></i> Estabilidade na Conexão</li>
+								<li><i class="la la-check-circle"></i> Suporte Grátis</li>
+							</ul>
+							<h2>R$ 48,70/Mensal</h2>
+							<button class="button">ASSINE JÁ</button>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="content">
+							<h4>Fámilia</h4>
+							<a href="." class="navbar-brand"><img src="img/velocidade3.png" alt=""></a>
+							<p class="bold"><span>300</span>Mbps</p>
+							<ul>
+								<li><i class="la la-check-circle"></i> Wi-fi Grátis</li>
+								<li><i class="la la-check-circle"></i> Instalação Grátis</li>
+								<li><i class="la la-check-circle"></i> Estabilidade na Conexão</li>
+								<li><i class="la la-check-circle"></i> Suporte Grátis</li>
+							</ul>
+							<h2>R$ 69,90/Mensal</h2>
+							<button class="button">ASSINE JÁ</button>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="content content-primary">
+							<h4>Empresa</h4>
+							<a href="." class="navbar-brand"><img src="img/velocidade4.png" alt=""></a>
+							<p class="bold"><span>700</span>Mbps</p>
+							<ul>
+								<li><i class="la la-check-circle"></i> Wi-fi Grátis</li>
+								<li><i class="la la-check-circle"></i> Instalação Grátis</li>
+								<li><i class="la la-check-circle"></i> Estabilidade na Conexão</li>
+								<li><i class="la la-check-circle"></i> Suporte Grátis</li>
+							</ul>
+							<h2>R$ 99,90/Mensal</h2>
+							<button class="button button3">ASSINE JÁ</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end pricing -->
+
+		<!-- promo -->
+		<div id="promo" class="promo">
+			<div class="container">
+				<div class="content">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<div class="entry">
+								<h2>Acompanhe todas <span>as novidades</span> pelo nosso app! </h2>
+							<button class="button">Android</button>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<img src="img/app.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end promo -->
+
+
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="content-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sKota%20New%20York%2C%20New%20York%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1639286790548!5m2!1sid!2sid" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="content-box">
+				<div class="row gx-5 align-items-center">
+					<div class="col-md-3">
+						<div class="content">
+							<div class="icon">
+								<i class="la la-phone"></i>
+							</div>
+							<div class="text">
+								<h5>Contato</h5>
+								<span> +55 27 99712-1517 </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="content">
+							<div class="icon">
+								<i class="la la-envelope"></i>
+							</div>
+							<div class="text">
+								<h5>E-mail</h5>
+								<span> contato@submittelecom.com.br </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="content">
+							<div class="icon">
+								<i class="la la-map"></i>
+							</div>
+							<div class="text">
+								<h5>Endereço</h5>
+								<span>Rod. do Sol, KM 25 - Ponta da Fruta, Vila Velha - ES, 29120020, Brasil</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+
+		
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md col-sm col-12">
+						<ul>
+							<li><a href="https://www.facebook.com/Submit-Telecom-105993291556122/"><i class="la la-facebook"></i></a></li>
+							<li><a href="tel:5527997121517"><i class="la la-phone"></i></a></li>
+							<li><a href="https://www.facebook.com/Submit-Telecom-105993291556122/"><i class="la la-instagram"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527997121517"><i class="la la-whatsapp"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md col-sm col-12">
+						Copyright © Todos os direitos reservados
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+		    <!-- START Widget WhastApp -->
+<a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527997121517" class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJibGFjayIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJ3aGF0c2FwcCI+PHBhdGggZD0iTTMwLDYwIEM0Ni41Njg1NDMzLDYwIDYwLDQ2LjU2ODU0MzMgNjAsMzAgQzYwLDEzLjQzMTQ1NjcgNDYuNTY4NTQzMywwIDMwLDAgQzEzLjQzMTQ1NjcsMCAwLDEzLjQzMTQ1NjcgMCwzMCBDMCw0Ni41Njg1NDMzIDEzLjQzMTQ1NjcsNjAgMzAsNjAgWiIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0zMC4wNzEyNjE1LDQ2LjIyMTA0NjIgQzI3LjIxMDgzMDgsNDYuMjIxMDQ2MiAyNC41MjM1NjkyLDQ1LjQ4OTk2OTIgMjIuMTg1Niw0NC4yMDY4OTIzIEwxMy4xNTM4NDYyLDQ3LjA3NjkyMzEgTDE2LjA5ODA5MjMsMzguMzkxODc2OSBDMTQuNjEzMDQ2MiwzNS45NTIzNjkyIDEzLjc1NzUzODUsMzMuMDkxNTY5MiAxMy43NTc1Mzg1LDMwLjAzMzYgQzEzLjc1NzUzODUsMjEuMDkzNDE1NCAyMS4wNjEyOTIzLDEzLjg0NjE1MzggMzAuMDcxNjMwOCwxMy44NDYxNTM4IEMzOS4wODA4NjE1LDEzLjg0NjE1MzggNDYuMzg0NjE1NCwyMS4wOTM0MTU0IDQ2LjM4NDYxNTQsMzAuMDMzNiBDNDYuMzg0NjE1NCwzOC45NzM3ODQ2IDM5LjA4MTIzMDgsNDYuMjIxMDQ2MiAzMC4wNzEyNjE1LDQ2LjIyMTA0NjIgWiBNMzAuMDcxMjYxNSwxNi40MjQxMjMxIEMyMi41MDc5Mzg1LDE2LjQyNDEyMzEgMTYuMzU1ODE1NCwyMi41MjkzNTM4IDE2LjM1NTgxNTQsMzAuMDMzNiBDMTYuMzU1ODE1NCwzMy4wMTE0NDYyIDE3LjMyNjUyMzEsMzUuNzY5MjMwOCAxOC45NjgxMjMxLDM4LjAxMzA0NjIgTDE3LjI1NDg5MjMsNDMuMDY3MDc2OSBMMjIuNTI1MjkyMyw0MS4zOTE4NzY5IEMyNC42OTEyLDQyLjgxMzc4NDYgMjcuMjg1NDE1NCw0My42NDMwNzY5IDMwLjA3MTI2MTUsNDMuNjQzMDc2OSBDMzcuNjMzNDc2OSw0My42NDMwNzY5IDQzLjc4NjcwNzcsMzcuNTM4MjE1NCA0My43ODY3MDc3LDMwLjAzMzk2OTIgQzQzLjc4NjcwNzcsMjIuNTI5NzIzMSAzNy42MzM0NzY5LDE2LjQyNDEyMzEgMzAuMDcxMjYxNSwxNi40MjQxMjMxIEwzMC4wNzEyNjE1LDE2LjQyNDEyMzEgWiBNMzguMzA4OCwzMy43NjE3MjMxIEMzOC4yMDgzNjkyLDMzLjU5NjY3NjkgMzcuOTQxNzg0NiwzMy40OTY5ODQ2IDM3LjU0MjY0NjIsMzMuMjk4NzA3NyBDMzcuMTQyNCwzMy4xMDA0MzA4IDM1LjE3NTg3NjksMzIuMTQwMDYxNSAzNC44MDk5NjkyLDMyLjAwODI0NjIgQzM0LjQ0Mjk1MzgsMzEuODc2MDYxNSAzNC4xNzYsMzEuODA5MjMwOCAzMy45MDk3ODQ2LDMyLjIwNjUyMzEgQzMzLjY0MzU2OTIsMzIuNjAzODE1NCAzMi44NzcwNDYyLDMzLjQ5Njk4NDYgMzIuNjQzMzIzMSwzMy43NjE3MjMxIEMzMi40MDk5NjkyLDM0LjAyNjgzMDggMzIuMTc2OTg0NiwzNC4wNjAwNjE1IDMxLjc3NzEwNzcsMzMuODYxNDE1NCBDMzEuMzc3NiwzMy42NjMxMzg1IDMwLjA4ODk4NDYsMzMuMjQ0MDYxNSAyOC41NjExMDc3LDMxLjg5MjMwNzcgQzI3LjM3MjU1MzgsMzAuODQwNzM4NSAyNi41Njk4NDYyLDI5LjU0MjUyMzEgMjYuMzM2ODYxNSwyOS4xNDQ4NjE1IEMyNi4xMDM1MDc3LDI4Ljc0NzkzODUgMjYuMzEyMTIzMSwyOC41MzM0MTU0IDI2LjUxMjI0NjIsMjguMzM1ODc2OSBDMjYuNjkyMDYxNSwyOC4xNTc5MDc3IDI2LjkxMjEyMzEsMjcuODcyNDkyMyAyNy4xMTIyNDYyLDI3LjY0MDk4NDYgQzI3LjMxMjM2OTIsMjcuNDA5MTA3NyAyNy4zNzg4MzA4LDI3LjI0NDA2MTUgMjcuNTExNzUzOCwyNi45Nzg5NTM4IEMyNy42NDU0MTU0LDI2LjcxNDIxNTQgMjcuNTc4NTg0NiwyNi40ODI3MDc3IDI3LjQ3ODUyMzEsMjYuMjgzNjkyMyBDMjcuMzc4NDYxNSwyNi4wODU0MTU0IDI2LjU3ODMzODUsMjQuMTMyOTIzMSAyNi4yNDUyOTIzLDIzLjMzODMzODUgQzI1LjkxMjI0NjIsMjIuNTQ0NDkyMyAyNS41Nzk1NjkyLDIyLjY3NjY3NjkgMjUuMzQ1ODQ2MiwyMi42NzY2NzY5IEMyNS4xMTI0OTIzLDIyLjY3NjY3NjkgMjQuODQ1OTA3NywyMi42NDM0NDYyIDI0LjU3OTMyMzEsMjIuNjQzNDQ2MiBDMjQuMzEyNzM4NSwyMi42NDM0NDYyIDIzLjg3OTI2MTUsMjIuNzQyNzY5MiAyMy41MTI2MTU0LDIzLjEzOTY5MjMgQzIzLjE0NjMzODUsMjMuNTM2OTg0NiAyMi4xMTM2LDI0LjQ5Njk4NDYgMjIuMTEzNiwyNi40NDkxMDc3IEMyMi4xMTM2LDI4LjQwMTYgMjMuNTQ1ODQ2MiwzMC4yODggMjMuNzQ2MzM4NSwzMC41NTIzNjkyIEMyMy45NDYwOTIzLDMwLjgxNjczODUgMjYuNTExODc2OSwzNC45NTM2IDMwLjU3NjczODUsMzYuNTQyNCBDMzQuNjQzMDc2OSwzOC4xMzA4MzA4IDM0LjY0MzA3NjksMzcuNjAwOTg0NiAzNS4zNzYzNjkyLDM3LjUzNDg5MjMgQzM2LjEwODU1MzgsMzcuNDY4OCAzNy43NDEyOTIzLDM2LjU3NTI2MTUgMzguMDc1NDQ2MiwzNS42NDg4NjE1IEMzOC40MDgxMjMxLDM0LjcyMTcyMzEgMzguNDA4MTIzMSwzMy45MjcxMzg1IDM4LjMwODgsMzMuNzYxNzIzMSBMMzguMzA4OCwzMy43NjE3MjMxIFoiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9nPjwvc3ZnPg==" alt="" width="60px">
+    </a>
+    <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+    <div id="msg1" style="right: 90px; visibility: visible; background: #1EBC59; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100; ">Fale conosco pelo WhatsApp</div>
+    <script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+    <!-- END Widget WhastApp -->
+
+		<!-- script -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/fakeLoader.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery.filterizr.min.js"></script>
+		<script src="js/magnific-popup.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/main.js"></script>
+		
+		
+	</body>
+</html>
