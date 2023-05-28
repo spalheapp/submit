@@ -674,3 +674,72 @@ footer ul li i:hover {
     margin-bottom: 12px;
   }
 }
+
+
+
+/* mobile buttons feat */
+
+@media (min-width:993px){
+  .mobileNavBar{
+    display: none;
+  }
+}
+
+@media(max-width: 992px){
+  #navbar{
+    display: none;
+    width: 100%;
+  }
+
+  .mobileNavBar{
+    position: absolute;
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+  }
+
+  .mobileNavBar img{
+    width: 180px;
+  }
+  #navTop{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navTop i{
+    background-color: #eeeeee;
+    padding: 4px 7px;
+    border-radius: 2px;
+  }
+
+  #navBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .borderA{
+    border: 3px solid #00B7FF;
+    height: 3rem;
+    width: 49%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navBottom a{
+    color: #00B7FF;
+  }
+}
