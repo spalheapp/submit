@@ -716,10 +716,11 @@ footer ul li i:hover {
     justify-content: space-between;
   }
 
-  #navTop i{
+  #navTop button{
     background-color: #eeeeee;
     padding: 4px 7px;
     border-radius: 2px;
+    border: none;
   }
 
   #navBottom{
@@ -742,4 +743,41 @@ footer ul li i:hover {
   #navBottom a{
     color: #00B7FF;
   }
+}
+
+.visibleMobile{
+  position: absolute;
+
+  z-index: 1 ;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.visibleMobile li{
+  margin: 4rem;
+}
+
+.visibleMobile a{
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+#menuExit{
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+
+  border: none;
+  padding: .5rem 1rem;
+  font-weight: bold;
+
+  border-radius: 5px;
 }
